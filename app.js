@@ -3,7 +3,7 @@
 // let paragrafo = document.querySelector("p");
 // paragrafo.innerHTML = "escolha um número entre 1 a 100";
 let listaDeNumerosSorteados = [];
-let qtdDeNumeros = 5;
+let qtdDeNumeros = 1000;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
     console.log(numeroSecreto)
@@ -40,7 +40,7 @@ let palavraTentativa = tentativas > 1 ? "tentativas" : "tentativa";
         else if (chute > numeroSecreto) {
             exibirTextoNaTela("p", `O número secreto é menor que ${chute} (tentativas: ${tentativas})`);
     } else {
-        exibirTextoNaTela("p", `o número secreto maior que ${chute} (tentativas: ${tentativas})`);
+        exibirTextoNaTela("p", `o número secreto é maior que ${chute} (tentativas: ${tentativas})`);
     }
     // se o valor for maior ou menor que qtdDeNumeros
     if (chute > qtdDeNumeros || chute < 1) {
